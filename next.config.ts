@@ -1,11 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export", // 이 설정이 있어야 빌드 시 'out' 폴더가 생성됩니다.
-  basePath: "/ss",
-  images: {
-    unoptimized: true,
-  },
+  // 빌드 시 사소한 경고로 멈추지 않도록 예외 처리
   eslint: {
     ignoreDuringBuilds: true,
   },
